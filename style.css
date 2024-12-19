@@ -7,26 +7,33 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-items: stretch;
+
 }
 
 header,
 #hero,
 footer {
     background-color: #1f2937;
+    align-items: stretch;
+    padding: 0px 200px 0px 200px;
+    display: flex;
 }
 
-header {
-    
+header,
+footer {
+
     margin: 0;
     font-size: 18px;
-    display: flex;
     align-items: center;
-    padding: 0px 50px 0px 50px;
     
+
 }
 
+
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .logo h1 {
@@ -34,11 +41,16 @@ header {
     color: #F9FAF8;
 }
 
-a {
+.page-links {
+    margin-left: auto;
+}
+
+a,
+footer {
     /* this removes the line under our links */
     text-decoration: none;
     color: #E5E7EB;
-    
+
 }
 
 
@@ -47,5 +59,27 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
-      
+
+}
+
+#hero{
+    
+}
+
+.hero-text h3 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-image {
+    display: flex;
+    background-color: #bbb;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer {
+    justify-content: center;
 }
